@@ -158,7 +158,7 @@ public class SelectPicsActivity extends BaseActivity {
             }else if(compressSize.intValue() == 105){
                 language = LanguageConfig.PORTUGAL;
             }
-            PictureSelector.create(this).openGallery("image".equals(mode) ? SelectMimeType.ofImage() : SelectMimeType.ofVideo())
+            PictureSelector.create(this).openGallery("video".equals(mode) ? SelectMimeType.ofImage() : SelectMimeType.ofAll())
                     .setImageEngine(GlideEngine.createGlideEngine())
                     .setSelectorUIStyle(pictureStyleUtil.getSelectorStyle())
                     .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
@@ -171,7 +171,7 @@ public class SelectPicsActivity extends BaseActivity {
                     .setSandboxFileEngine(new MeSandboxFileEngine())
                     .isDisplayCamera(showCamera)
                     .isMaxSelectEnabledMask(true)
-                    .setLanguage(12)
+                    .setLanguage(language)
                     .isGif(showGif)
                     .setMaxSelectNum(selectCount.intValue())
                     .setImageSpanCount(4)// 每行显示个数 int
