@@ -158,6 +158,7 @@ public class SelectPicsActivity extends BaseActivity {
             }else if(compressSize.intValue() == 105){
                 language = LanguageConfig.PORTUGAL;
             }
+            Log.i("tag","language====="+language);
             PictureSelector.create(this).openGallery("video".equals(mode) ? SelectMimeType.ofImage() : SelectMimeType.ofAll())
                     .setImageEngine(GlideEngine.createGlideEngine())
                     .setSelectorUIStyle(pictureStyleUtil.getSelectorStyle())

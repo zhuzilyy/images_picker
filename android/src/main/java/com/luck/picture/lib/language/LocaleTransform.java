@@ -47,7 +47,7 @@ public class LocaleTransform {
                 //泰语
                 return new Locale("th", "rTH");
             default:
-                return Locale.ENGLISH;
+                return Locale.CHINESE;
         }
     }
 }
