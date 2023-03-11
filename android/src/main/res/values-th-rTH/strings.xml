@@ -14,7 +14,7 @@
     <string name="ps_done_front_num">%1$d/%2$d Ok</string>
     <string name="ps_completed">เรียนจบแล้ว</string>
     <string name="ps_done">Complete</string>
-    <string name="ps_please_select">Please Select</string>
+    <string name="ps_please_select">เลือก</string>
     <string name="ps_empty_title">No video or photos\n</string>
     <string name="ps_empty_audio_title">No audio file\n</string>
     <string name="ps_audio_empty">You can use system recordings to record audio</string>

@@ -13,11 +13,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7080ff30-f4dc-4f89-a7df-5629d579afab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/java/com/leeson/image_pickers/activitys/SelectPicsActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/java/com/leeson/image_pickers/activitys/SelectPicsActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/res/values-th-rTH/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/res/values-th-rTH/strings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7080ff30-f4dc-4f89-a7df-5629d579afab" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,13 +83,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571893796328</updated>
-    </task>
-    <task id="LOCAL-00006" summary="修复安卓9无法加载图片问题">
-      <created>1573532848936</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1573532848936</updated>
     </task>
     <task id="LOCAL-00007" summary="ui颜色">
       <created>1573794330676</created>
@@ -431,7 +420,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678534133695</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="泰语文案">
+      <created>1678536458412</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1678536458412</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -474,7 +470,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/example/ios/.symlinks/plugins/image_pickers" />
     </ignored-roots>
-    <MESSAGE value="android 测试完成" />
     <MESSAGE value="测试完成" />
     <MESSAGE value="视频保存" />
     <MESSAGE value="修复安卓9无法加载图片问题" />
@@ -499,7 +494,8 @@
     <MESSAGE value="未选择图片将返回空数组，未拍照或者未拍摄视频将返回null" />
     <MESSAGE value="安卓更新最新的图片选择库" />
     <MESSAGE value="语言设置" />
-    <option name="LAST_COMMIT_MESSAGE" value="语言设置" />
+    <MESSAGE value="泰语文案" />
+    <option name="LAST_COMMIT_MESSAGE" value="泰语文案" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
