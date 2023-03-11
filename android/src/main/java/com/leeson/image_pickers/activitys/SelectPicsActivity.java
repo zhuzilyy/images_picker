@@ -158,7 +158,7 @@ public class SelectPicsActivity extends BaseActivity {
             }else if(compressSize.intValue() == 105){
                 language = LanguageConfig.PORTUGAL;
             }
-            PictureSelector.create(this).openGallery("image".equals(mode)?SelectMimeType.ofImage():SelectMimeType.ofVideo())
+            PictureSelector.create(this).openGallery("image".equals(mode)?SelectMimeType.ofImage():SelectMimeType.ofAll())
                     .setImageEngine(GlideEngine.createGlideEngine())
                     .setSelectorUIStyle(pictureStyleUtil.getSelectorStyle())
                     .setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
@@ -223,7 +223,13 @@ public class SelectPicsActivity extends BaseActivity {
                 //如果选择的是图片就压缩
                 compressFinish(paths);
             } else {
-                resolveVideoPath(selectList);
+                if( selectList.get(0).getAvailablePath().endsWith(".mp4")){
+                    resolveVideoPath(selectList);
+                }else{
+                    //如果选择的是图片就压缩
+                    compressFinish(paths);
+                }
+
             }
         }
     }
