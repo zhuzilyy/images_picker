@@ -1,0 +1,69 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.leeson.image_pickers">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <queries package="${applicationId}">
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE">
+
+            </action>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE">
+            </action>
+        </intent>
+    </queries>
+    <application
+        android:networkSecurityConfig="@xml/net_sec"
+        android:requestLegacyExternalStorage="true">
+        <!--适配9.0的系统-->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <!--适配9.0的系统-->
+        <activity android:name=".activitys.PermissionActivity" android:theme="@style/TransTheme"/>
+        <activity android:name=".activitys.SelectPicsActivity" android:theme="@style/TransTheme"/>
+        <activity android:name=".activitys.PhotosActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name=".activitys.VideoActivity" android:configChanges="orientation|screenSize" android:theme="@style/AppTheme"/>
+<!--        <provider-->
+<!--            android:name="com.luck.picture.lib.basic.PictureFileProvider"-->
+<!--            android:authorities="${applicationId}.luckProvider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/ps_file_paths" />-->
+<!--        </provider>-->
+
+<!--        <service-->
+<!--            android:name="com.luck.picture.lib.service.ForegroundService"-->
+<!--            android:enabled="true"-->
+<!--            android:foregroundServiceType="location" />-->
+
+        <activity
+            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Base.Theme.NoActionBar"/>
+<!--        <activity-->
+<!--            android:name=".basic.PictureSelectorTransparentActivity"-->
+<!--            android:configChanges="orientation|keyboardHidden|screenSize"-->
+<!--            android:theme="@style/Picture.Theme.Translucent">-->
+
+<!--        </activity>-->
+<!--        -->
+        <!--        <provider-->
+        <!--            android:name=".provides.MyProvide"-->
+        <!--            android:authorities="com.leeson.pickers.fileprovider"-->
+        <!--            android:exported="false"-->
+        <!--            android:grantUriPermissions="true">-->
+        <!--            <meta-data-->
+        <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+        <!--                android:resource="@xml/pickers_plugin_file_path" />-->
+        <!--        </provider>-->
+    </application>
+</manifest>
